@@ -19,7 +19,7 @@
     "128": "lib/images/icons/jaws128.png"
   },
   "content_scripts": [ {
-    "js": ["lib/javascript/jquery.min.js", "lib/javascript/jquery.ba-replacetext.min.js", "lib/javascript/comcastify.js"],
-    "matches": [ "http://*.fark.com/*"]
-  }],
+    "js": ["lib/javascript/jquery.min.js", "lib/javascript/extension.js"],
+    "matches": ["http://*/*"]
+  }]
 }
