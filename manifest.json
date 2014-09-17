@@ -1,0 +1,25 @@
+{
+  "name": "Comcastify",
+  "short_name": "Comcastify",
+  "author": "Rick Beyer",
+  "homepage_url": "https://github.com/fcbeyer/chrome-comcastify",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "description": "Images are loading too quickly on the web, this extension fixes that issue",
+  "permissions": [
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "Comcastify",
+    "default_icon": "lib/images/icons/jaws16.png"
+  },
+  "icons": {
+    "16": "lib/images/icons/jaws16.png",
+    "48": "lib/images/icons/jaws48.png",
+    "128": "lib/images/icons/jaws128.png"
+  },
+  "content_scripts": [ {
+    "js": ["lib/javascript/jquery.min.js", "lib/javascript/jquery.ba-replacetext.min.js", "lib/javascript/comcastify.js"],
+    "matches": [ "http://*.fark.com/*"]
+  }],
+}
